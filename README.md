@@ -6,6 +6,10 @@ Below is the easiest way to build a C++ source file from this repo
 
 `g++ -std=c++11 my_code.cpp -o my_executable`
 
+Below is how to let the compiler warn you about potential mistakes in your code
+
+`g++ -Wall -Wextra -std=c++11 my_code.cpp -o my_executable`
+
 To run the compiled code, use
 
 `./my_executable`
