@@ -7,7 +7,7 @@ int main() {
     // We have only used string literals like "foo", to store a string in a variable
     // explicitly, we use the std::string type from the standard library
 
-    std::string name;                               // Declare a variable call name with type std::string
+    std::string name;                               // Declare a variable called name, with type std::string
     std::cout << "Tell me your first name: ";       // Prompt user input
     std::cin >> name;                               // Extract user input from the cin input stream, and store it in name
     std::cout << "Hello, " << name << '\n';         // Check the result

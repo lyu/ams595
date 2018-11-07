@@ -13,6 +13,7 @@ using namespace std;
 // We define a power funciton that computes base^exp
 // Both base and the return value are integers
 int my_pow(int base, int exp) {
+    std::cout << "(Selecting the int version of my_pow) ";
     int result = 1;
     for (int e = 1; e <= exp; e++)
         result *= base;
@@ -24,6 +25,7 @@ int my_pow(int base, int exp) {
 // Try delete this function, see what the program prints for 3.3^3
 // What happens if you delete the function above?
 double my_pow(double base, int exp) {
+    std::cout << "(Selecting the double version of my_pow) ";
     double result = 1.0;
     for (int e = 1; e <= exp; e++)
         result *= base;
@@ -38,7 +40,7 @@ int main() {
 
     // Different from Python, this will print 1 instead of 1.5
     //   1. Both 2 & 3 looks like integers, so C++ assume you will want an integer as the result
-    //   2. The standard says that C++ compilers should just take the integer part as the result
+    //   2. The standard says that C++ compilers should just take the integer part of 1.5 as the result
     cout << "3 / 2 = " << 3 / 2 << '\n';
 
     // Method 1 to avoid this problem: make at least one operand looks like a float
