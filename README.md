@@ -27,3 +27,7 @@ Other useful compiler options will be added later
 4. Finally, use `brew install gcc` to install GCC, this will also install G++
 
 5. Now you should be able to compile C++ source code with the command `g++-8 -std=c++11 foo.cpp -o foo`. Notice that the command `g++` also works but it is NOT the real GNU compiler.
+
+## Memory layout: Stack v.s. Heap
+
+![Stack_vs_Heap](stack_heap.jpg)
