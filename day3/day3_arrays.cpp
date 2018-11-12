@@ -27,6 +27,13 @@ int main() {
     }
 
     std::cout << "dot product: " << dot(my_array_1, my_array_2, N) << '\n';
+    
+    // Notice that you cannot assign one array to another directly, because
+    // the = operator doesn't know about the length of your arrays. Instead you
+    // will have to use a loop to copy the values one by one.
+    // Try uncomment the following line and see what happens when you compile
+    // this program.
+    // my_array_2 = my_array_1;
 
     // Now let's go deeper.
     // Unlike Python, C/C++ does not warn you if you go out-of-bound, you can
