@@ -10,6 +10,17 @@ Below is how to let the compiler warn you about potential mistakes in your code
 
 `g++ -Wall -Wextra -std=c++11 my_code.cpp -o my_executable`
 
+Below is how to tell the compiler to choose an optimization level
+
+`g++ -std=c++11 -O0 my_code.cpp -o my_executable`
+
+Levels of optimization for GCC/G++:
+    * -O0: No optimization
+    * -O1: Optimize something
+    * -O2: Optimize more (recommended)
+    * -O3: Turn on aggressive optimizations (may not be faster, and may cause errors)
+    * -Ofast: Highest level of optimization (almost never worth it)
+
 To run the compiled code, use
 
 `./my_executable`
