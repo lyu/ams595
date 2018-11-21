@@ -20,7 +20,7 @@ You can try gdb with `day6_test.cpp`, set a breakpoint at `main`, then step over
 
 `del <ID>`: Remove a breakpoint using its ID
 
-`r`: Run the program (start the execution)
+`r`: Run the program (start/restart the execution)
 
 `s`: Execute the line under the cursor when the execution is paused (single step)
 
@@ -31,3 +31,5 @@ You can try gdb with `day6_test.cpp`, set a breakpoint at `main`, then step over
 `p <variable_name>`: Print the value of some variable
 
 `set variable <variable_name> = <new_value>`: Modify a variable's value
+
+`q`: Exit the debugger
