@@ -42,3 +42,7 @@ Other useful compiler options will be added later
 ## Memory layout: Stack v.s. Heap
 
 ![Stack_vs_Heap](stack_heap.jpg)
+
+## False sharing
+
+![False_sharing](false_sharing.png)
