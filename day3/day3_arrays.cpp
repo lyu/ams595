@@ -39,6 +39,7 @@ int main() {
     // Unlike Python, C/C++ does not warn you if you go out-of-bound, you can
     // overwrite something that does not belong to that array, and you are lucky
     // if your program crashes, because then you know something is wrong.
+    // https://en.wikipedia.org/wiki/Buffer_overflow
     // Here I will show you an example where your program doesn't crash, but
     // your data is silently corrupted.
     // If I write 6 elements to array 1, you would guess that I overwrite the
