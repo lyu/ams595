@@ -79,7 +79,7 @@ class myVec {
         // Here we define our own copy constructor that allocates another array
         // and we copy the values over manually, this is called deep copy and
         // is the right way to do it.
-        myVec(myVec& other) {
+        myVec(const myVec& other) {
             _size = other.size();
             _data = new double[_size];
             for (uint64_t i = 0; i < _size; i++)
@@ -98,6 +98,7 @@ class myVec {
         // Again, if you don't define this yourself, C++ will only copy the
         // pointer over, resulting in a shallow copy.
         myVec& operator=(myVec& other) {
+            delete [] _data;
             _size = other.size();
             _data = new double[_size];
             for (uint64_t i = 0; i < _size; i++)
@@ -112,13 +113,17 @@ class myVec {
         }
 
         // Like std::vector, let's create a member function that returns the size
-        uint64_t size() {
+        uint64_t size() const {
             return _size;
         }
 
         // Array indexing operator [], notice a return a reference to an element,
         // so I can say v[i] = some_value;
         double& operator[](uint64_t idx) {
+            return _data[idx];
+        }
+
+        const double& operator[](uint64_t idx) const {
             return _data[idx];
         }
 
